@@ -90,20 +90,6 @@ Raw Data
 
 The model explains **~87.5%** of the variance in flight prices.
 
----
-
-## 🐛 Bugs Fixed from Original Notebook
-
-| Cell | Issue | Fix Applied |
-|------|-------|-------------|
-| Cells 0 & 2 | Used `google.colab.files.upload()` — Colab-only | Replaced with direct `pd.read_excel()` |
-| Cell 4 | `df_train.append(df_test)` — deprecated in pandas 2.0 | Replaced with `pd.concat([df_train, df_test])` |
-| Cell 26 | `Dep_Min` extracted with `.str[0]` (same as `Dep_Hour`) | Fixed to `.str[1]` to get actual minutes |
-| Cell 52 | `max_features='auto'` removed in sklearn 1.2+ | Replaced with `'sqrt'` (equivalent) |
-| Cell 12 | `Fraud`/`Normal` variables referenced before definition | N/A (different notebook — see Anomaly Detection) |
-
----
-
 ## 🚀 How to Run
 
 ### 1. Clone the repo
