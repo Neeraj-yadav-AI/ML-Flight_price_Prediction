@@ -113,6 +113,7 @@ jupyter notebook Flight_price_Prediction.ipynb
 ---
 
 ## 🛠️ Requirements
+```
 pandas >= 1.5
 numpy >= 1.23
 scikit-learn >= 1.2
@@ -120,3 +121,4 @@ matplotlib >= 3.5
 seaborn >= 0.12
 openpyxl >= 3.0
 jupyter
+```
